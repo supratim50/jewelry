@@ -10774,6 +10774,10 @@ body {
   background-color: #fcfcfc;
 }
 
+.mt-medium {
+  margin-top: 5rem !important;
+}
+
 .big-heading {
   font-size: 34px !important;
 }
@@ -10801,57 +10805,49 @@ body {
   color: #fff;
 }
 
-#sign-in {
-  height: 100vh !important;
-  /* === Bootstrap === */
-}
-
-#sign-in .sign-in {
-  height: 100vh;
-}
-
-#sign-in .input-main-box {
+.input-main-box {
   width: 95%;
   max-width: 470px;
 }
 
-#sign-in .form-control {
+.form-control {
   font-size: 14px !important;
   color: #000 !important;
 }
 
-#sign-in .input-label {
+.input-label {
   font-size: 14px;
 }
 
-#sign-in .social-icon {
+.social-icon {
   background-color: #fff;
   padding: 15px 30px;
   border-radius: 24px;
 }
 
-#sign-in .social-img {
+.social-img {
   max-width: 25px;
 }
 
-#sign-in .form-label-group {
+/* === Bootstrap === */
+.form-label-group {
   position: relative;
   margin-bottom: 1.5rem;
 }
 
-#sign-in .form-label-group > input,
-#sign-in .form-label-group > label {
+.form-label-group > input,
+.form-label-group > label {
   padding: 1rem;
 }
 
 @media screen and (min-width: 400px) {
-  #sign-in .form-label-group > input,
-  #sign-in .form-label-group > label {
+  .form-label-group > input,
+  .form-label-group > label {
     padding: 1.5rem;
   }
 }
 
-#sign-in .form-label-group > label {
+.form-label-group > label {
   position: absolute;
   top: 0;
   left: 0;
@@ -10867,43 +10863,63 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-#sign-in .form-label-group input::-webkit-input-placeholder {
+.form-label-group input::-webkit-input-placeholder {
   color: transparent;
 }
 
-#sign-in .form-label-group input:-ms-input-placeholder {
+.form-label-group input:-ms-input-placeholder {
   color: transparent;
 }
 
-#sign-in .form-label-group input::-ms-input-placeholder {
+.form-label-group input::-ms-input-placeholder {
   color: transparent;
 }
 
-#sign-in .form-label-group input::placeholder {
+.form-label-group input::placeholder {
   color: transparent;
 }
 
-#sign-in .form-label-group input:not(:placeholder-shown) {
-  padding-top: 2rem;
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-#sign-in .form-label-group input:not(:placeholder-shown) ~ label {
-  padding-top: calc(0.7 / 3);
-  padding-bottom: calc(0.7 / 3);
-  font-size: 11px;
+@media screen and (min-width: 400px) {
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(0.5rem / 3);
+  padding-bottom: calc(0.5rem / 3);
+  font-size: 10px;
   color: #777;
 }
 
 @media screen and (min-width: 400px) {
-  #sign-in .form-label-group input:not(:placeholder-shown) ~ label {
-    padding-top: calc(2rem / 3);
-    padding-bottom: calc(2rem / 3);
+  .form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: calc(1.5rem / 3);
+    padding-bottom: calc(1.5rem / 3);
+    font-size: 12px;
   }
 }
 
-#sign-in .line-svg {
+.line-svg {
   top: 0;
   right: 0;
+}
+
+.error .form-control {
+  border: 1px solid #ee2d4f !important;
+}
+
+.error .error-msg {
+  display: block;
+}
+
+.error-msg {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
