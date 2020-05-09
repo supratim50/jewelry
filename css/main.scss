@@ -1,0 +1,180 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// ======================= Variables ========================
+
+$color-primary: #ee2d4f;
+$color-secondary: #fff;
+
+$frame-back: #fcfcfc;
+$bodyTextBlack: #373737;
+
+$black: #000;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ======================= Base =======================
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $frame-back;
+}
+// ======================= Base end =======================
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ======================= mixins =======================
+
+@mixin responsive($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// ======================= mixins end =======================
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ================================ Typography ================================
+
+.big-heading {
+  font-size: 34px !important;
+}
+
+.paragraph-text {
+  font-size: 14px;
+}
+
+// text color
+
+.text {
+  &-primary {
+    color: $color-primary !important;
+  }
+
+  &-dark {
+    color: $bodyTextBlack !important;
+  }
+}
+
+// ================================ Typography End ================================
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ================================ Component ====================================
+
+.btn {
+  padding: 17px 88px !important;
+  border-radius: 10px !important;
+  border: none !important;
+
+  &-primary {
+    background-color: $color-primary !important;
+    color: $color-secondary;
+  }
+}
+
+// ================================ Component End ================================
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ================================= Pages ==========================================
+
+// ==================== Login Page ====================
+
+// ============ #sign-in
+#sign-in {
+  height: 100vh !important;
+
+  .sign-in {
+    height: 100vh;
+  }
+
+  .input-main-box {
+    width: 95%;
+    max-width: 470px;
+  }
+
+  .form-control {
+    font-size: 14px !important;
+    color: $black !important;
+  }
+
+  .input-label {
+    font-size: 14px;
+  }
+
+  // social icon
+
+  .social {
+    &-icon {
+      background-color: $color-secondary;
+      padding: 15px 30px;
+      border-radius: 24px;
+    }
+
+    &-img {
+      max-width: 25px;
+    }
+  }
+
+  /* === Bootstrap === */
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .form-label-group > input,
+  .form-label-group > label {
+    padding: 1rem;
+
+    @include responsive(400px) {
+      padding: 1.5rem;
+    }
+  }
+  .form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: all 0.1s ease-in-out;
+  }
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: calc(0.7 / 3);
+    padding-bottom: calc(0.7 / 3);
+    font-size: 11px;
+    color: #777;
+
+    @include responsive(400px) {
+      padding-top: calc(2rem / 3);
+      padding-bottom: calc(2rem / 3);
+    }
+  }
+
+  // ==== svg ======
+  .line-svg {
+    top: 0;
+    right: 0;
+  }
+}
+
+// ========================= Login Page end ===========================
