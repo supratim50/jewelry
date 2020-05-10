@@ -10778,12 +10778,20 @@ body {
   margin-top: 5rem !important;
 }
 
+.bg-primary-light {
+  background-color: rgba(238, 45, 79, 0.03);
+}
+
 .big-heading {
   font-size: 34px !important;
 }
 
 .paragraph-text {
   font-size: 14px;
+}
+
+.paragraph-text-lg {
+  font-size: 17px;
 }
 
 .text-primary {
@@ -10794,13 +10802,75 @@ body {
   color: #373737 !important;
 }
 
+#fav-nav .nav-icon {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  #fav-nav .nav-bottom-box {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+#fav-nav .menu-icon:hover > .dropdown-box {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#fav-nav .dropdown-box {
+  top: 100%;
+  right: 0;
+  width: 381px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#fav-nav .selector-list {
+  border-radius: 20px;
+}
+
+#fav-nav .selector-list .img-box {
+  max-width: 20%;
+}
+
 .btn {
-  padding: 17px 88px !important;
   border-radius: 10px !important;
   border: none !important;
 }
 
+.btn-big {
+  padding: 17px 88px !important;
+}
+
+.btn-small {
+  padding: 7px 31px !important;
+}
+
 .btn-primary {
+  background-color: #ee2d4f !important;
+  color: #fff;
+}
+
+#fav-nav .selector-box {
+  background-color: rgba(238, 45, 79, 0.03) !important;
+  border-radius: 10px;
+}
+
+#fav-nav .btn {
+  background-color: none !important;
+  color: #373737;
+}
+
+#fav-nav .active {
   background-color: #ee2d4f !important;
   color: #fff;
 }

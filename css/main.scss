@@ -3,6 +3,7 @@
 // ======================= Variables ========================
 
 $color-primary: #ee2d4f;
+$color-primary-light: rgba(238, 45, 79, 0.03);
 $color-secondary: #fff;
 
 $frame-back: #fcfcfc;
@@ -25,8 +26,14 @@ body {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ======================= mixins =======================
 
-@mixin responsive($size) {
+@mixin responsive-min($size) {
   @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin responsive-max($size) {
+  @media screen and (max-width: $size) {
     @content;
   }
 }
@@ -36,6 +43,10 @@ body {
 // ================================ Utilities ================================
 .mt-medium {
   margin-top: 5rem !important;
+}
+
+.bg-primary-light {
+  background-color: $color-primary-light;
 }
 // ================================ Utilities end ================================
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47,6 +58,10 @@ body {
 
 .paragraph-text {
   font-size: 14px;
+}
+
+.paragraph-text-lg {
+  font-size: 17px;
 }
 
 // text color
@@ -65,12 +80,77 @@ body {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ================================ Component ====================================
 
+// ===== navbar
+
+#fav-nav {
+  .nav {
+    &-icon {
+      font-size: 22px;
+    }
+
+    &-bottom-box {
+      @include responsive-max(767px) {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .menu-icon:hover > .dropdown-box {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-box {
+    top: 100%;
+    right: 0;
+    width: 381px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.5s;
+  }
+
+  .selector-list {
+    border-radius: 20px;
+    .img-box {
+      max-width: 20%;
+    }
+  }
+}
+
+// ===== button
 .btn {
-  padding: 17px 88px !important;
   border-radius: 10px !important;
   border: none !important;
 
+  &-big {
+    padding: 17px 88px !important;
+  }
+
+  &-small {
+    padding: 7px 31px !important;
+  }
+
   &-primary {
+    background-color: $color-primary !important;
+    color: $color-secondary;
+  }
+}
+
+#fav-nav {
+  .selector-box {
+    background-color: $color-primary-light !important;
+    border-radius: 10px;
+  }
+  .btn {
+    background-color: none !important;
+    color: $bodyTextBlack;
+  }
+  .active {
     background-color: $color-primary !important;
     color: $color-secondary;
   }
@@ -120,7 +200,7 @@ body {
 .form-label-group > label {
   padding: 1rem;
 
-  @include responsive(400px) {
+  @include responsive-min(400px) {
     padding: 1.5rem;
   }
 }
@@ -157,7 +237,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 
-  @include responsive(400px) {
+  @include responsive-min(400px) {
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
@@ -168,7 +248,7 @@ body {
   font-size: 10px;
   color: #777;
 
-  @include responsive(400px) {
+  @include responsive-min(400px) {
     padding-top: calc(1.5rem / 3);
     padding-bottom: calc(1.5rem / 3);
     font-size: 12px;

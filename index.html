@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==== Bootstrap ==== -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- === Font === -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./font/flaticon.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="fav-nav">
+      <div
+        class="nav-bar p-4 d-flex justify-content-between align-items-center"
+      >
+        <div class="p-2">
+          <h1 class="logo h3 mb-0">Brand Name</h1>
+        </div>
+        <div
+          class="p-2 d-flex justify-content-between align-items-center nav-icon-box"
+        >
+          <i class="nav-icon flaticon-worldwide mr-5"></i>
+          <!-- bottom nav  -->
+          <div class="nav-bottom-box py-3 py-md-0 d-flex align-items-center">
+            <ul
+              class="d-flex justify-content-around align-items-center self-sligns-center mb-0 pl-0 w-100"
+            >
+              <!-- home icon -->
+              <li class="nav-link d-md-none mr-md-5">
+                <i class="nav-icon flaticon-care"></i>
+              </li>
+              <!-- menu icon -->
+              <li class="nav-link menu-icon mr-md-5 position-relative">
+                <i class="nav-icon flaticon-money-bag"></i>
+                <!-- dropdow  -->
+                <div class="dropdown-box position-absolute p-4 shadow-sm">
+                  <!-- selector  -->
+                  <div class="text-center mb-3 py-3">
+                    <div class="selector-box d-inline-block">
+                      <a href="#" class="btn active btn-small font-weight-bold"
+                        >Sign In</a
+                      >
+                      <a href="#" class="btn btn-small font-weight-bold"
+                        >Sign In</a
+                      >
+                    </div>
+                  </div>
+                  <!-- selector end -->
+                  <!-- menu  -->
+                  <div
+                    class="selector-list bg-primary-light mt-4 p-4 d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="text-box d-flex justify-content-center flex-column"
+                    >
+                      <p class="mb-0 paragraph-text-lg font-weight-bold">
+                        Rings
+                      </p>
+                      <p class="mb-0 paragraph-text text-primary">
+                        Various Type
+                      </p>
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="./imgs/wedding-rings.png"
+                        class="list-img img-fluid"
+                        alt="List Images"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- menu end -->
+                </div>
+              </li>
+              <!-- profile  -->
+              <li class="nav-link position-relative">
+                <i class="nav-icon flaticon-pig"></i>
+                <!-- dropdow  -->
+                <div class="dropdown-box position-absolute p-4 border d-none">
+                  hello This is dropdown box
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- bottom nav End -->
+          <i class="nav-icon flaticon-organization ml-md-5 text-primary"></i>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
