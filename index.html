@@ -16,7 +16,7 @@
   <body>
     <!--================================== nav ======================================-->
     <header id="fav-nav" class="bg-background">
-      <div class="container border">
+      <div class="container">
         <div
           class="nav-bar py-3 py-md-4 d-flex justify-content-between align-items-center"
         >
@@ -26,8 +26,8 @@
           <div
             class="p-2 d-flex justify-content-between align-items-center nav-icon-box"
           >
-            <i class="nav-icon flaticon-worldwide mr-5"></i>
-            <!-- bottom nav  -->
+            <i class="nav-icon flaticon-worldwide mr-5 mr-md-5"></i>
+            <!--=========== bottom nav ==============-->
             <div class="nav-bottom-box py-3 py-md-0 d-flex align-items-center">
               <ul
                 class="d-flex justify-content-around align-items-center self-sligns-center mb-0 pl-0 w-100"
@@ -153,12 +153,12 @@
     <!--================================ nav end ====================================-->
 
     <!-- ========================== top offers ============================== -->
-
-    <section class="border" id="fav-top-offers">
+    <section id="fav-top-offers">
       <div class="container">
-        <h1 class="heading heading-primary mb-0">Top Offers</h1>
-        <div class="row mt-3 border top-offer-1st">
-          <div class="col-12 p-3">
+        <h1 class="heading heading-primary mb-0 text-capitalize">Top Offers</h1>
+        <!-- ============= 1st row of top offers ================== -->
+        <div class="row mt-3 top-offer-1st">
+          <div class="col-12 p-2 p-md-3">
             <div class="card">
               <div class="card-image-box overflow-hidden position-relative">
                 <img
@@ -169,8 +169,14 @@
                 <div
                   class="image-overflow d-flex flex-column justify-content-center align-items-center"
                 >
-                  <h1 class="heading big-heading text-secondary">Ring</h1>
-                  <p class="paragraph-text-lg text-secondary">25% OFF</p>
+                  <h1
+                    class="heading heading-primary text-secondary text-center"
+                  >
+                    Ring
+                  </h1>
+                  <p class="paragraph-text text-secondary text-center mb-0">
+                    25% OFF
+                  </p>
                 </div>
               </div>
             </div>
@@ -187,9 +193,224 @@
             </div>
           </div> -->
         </div>
+        <!-- ============= 2nd row of top offers ================== -->
+        <div class="row mt-3 top-offer-2nd">
+          <div class="col-6 col-md-4 p-2 p-md-3">
+            <!-- 1st card -->
+            <div class="card border-0">
+              <div class="card-image-box overflow-hidden position-relative">
+                <img
+                  class="card-img-top card-image"
+                  src="./imgs/cardImg-1.jpeg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="image-overflow d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h1
+                    class="heading heading-primary text-secondary text-center"
+                  >
+                    Bangles
+                  </h1>
+                  <p class="paragraph-text text-secondary text-center mb-0">
+                    25% OFF
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 1st card end -->
+          </div>
+          <div class="col-6 col-md-4 p-2 p-md-3">
+            <!-- 2nd card -->
+            <div class="card border-0">
+              <div class="card-image-box overflow-hidden position-relative">
+                <img
+                  class="card-img-top card-image"
+                  src="./imgs/cardImg-2.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="image-overflow d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h1
+                    class="heading heading-primary text-secondary text-center"
+                  >
+                    Necklace
+                  </h1>
+                  <p class="paragraph-text text-secondary text-center mb-0">
+                    25% OFF
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd card end -->
+          </div>
+          <div class="col-6 col-md-4 p-2 p-md-3">
+            <!-- 3rd card -->
+            <div class="card border-0">
+              <div class="card-image-box overflow-hidden position-relative">
+                <img
+                  class="card-img-top card-image"
+                  src="./imgs/cardImg-1.jpeg"
+                  alt="Card image cap"
+                />
+                <!-- overlay  -->
+                <div
+                  class="image-overflow d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h1
+                    class="heading heading-primary text-secondary text-center"
+                  >
+                    Earrings
+                  </h1>
+                  <p class="paragraph-text text-secondary text-center mb-0">
+                    25% OFF
+                  </p>
+                </div>
+                <!-- overlay end -->
+              </div>
+            </div>
+            <!-- 3rd card end -->
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- ========================== top offers end ============================== -->
+
+    <!-- ========================== deals of the day ============================== -->
+    <section class="mt-5 mb-5 pb-5" id="fav-deals-of-the-day">
+      <div class="container">
+        <h1 class="heading heading-primary mb-2 text-capitalize">
+          Deals of the <span class="text-uppercase text-primary">day</span>
+        </h1>
+        <p class="paragraph-text text-muted">
+          <i class="mr-2 flaticon-twitter"></i> 10 Hours 14 Minutes
+        </p>
+
+        <!--========= card box ==========-->
+        <div class="row mt-4">
+          <div class="col-md-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 1st card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 1st card end -->
+          </div>
+
+          <div class="col-md-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 2nd card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 2nd card end -->
+          </div>
+
+          <div class="col-md-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 3rd card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 3rd card end -->
+          </div>
+
+          <div class="col-md-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 4th card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 4th card end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================== deals of the day ============================== -->
   </body>
 </html>

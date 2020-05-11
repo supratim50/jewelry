@@ -10795,12 +10795,34 @@ body {
 }
 
 .heading {
-  font-weight: bold;
+  font-weight: bold !important;
   font-size: #373737;
 }
 
 .heading-primary {
   font-size: 22px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .heading-primary {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .heading-primary {
+    font-size: 18px !important;
+  }
+}
+
+.heading-primary-lg {
+  font-size: 25px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .heading-primary-lg {
+    font-size: 23px !important;
+  }
 }
 
 .paragraph-text {
@@ -10830,16 +10852,33 @@ body {
   z-index: 9999 !important;
 }
 
+#fav-nav .logo {
+  font-size: 24px;
+}
+
 #fav-nav .nav-icon {
   font-size: 22px;
 }
 
 @media screen and (max-width: 767px) {
+  #fav-nav .nav-icon {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   #fav-nav .nav-bottom-box {
+    background-color: #fff !important;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  #fav-nav .nav-bottom-box .nav-icon {
+    font-size: 20px;
   }
 }
 
@@ -10917,6 +10956,45 @@ body {
 #fav-nav .active {
   background-color: #ee2d4f !important;
   color: #fff;
+}
+
+.card .card-image-box {
+  border-radius: 20px;
+}
+
+.card .card-img-top {
+  max-height: 298px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-offer-2nd .card .card-img-top {
+  min-height: 228px;
+}
+
+@media screen and (max-width: 767px) {
+  .top-offer-2nd .card .card-img-top {
+    min-height: 200px;
+  }
+}
+
+#fav-deals-of-the-day .card .card-img-top {
+  min-height: 260px;
+}
+
+@media screen and (max-width: 767px) {
+  #fav-deals-of-the-day .card .card-img-top {
+    min-height: 200px;
+  }
+}
+
+.image-overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .input-main-box {
@@ -11041,22 +11119,9 @@ body {
   margin-top: 130px;
 }
 
-#fav-top-offers .top-offer-1st .card .card-image-box {
-  border-radius: 20px;
-}
-
-#fav-top-offers .top-offer-1st .card .card-img-top {
-  max-height: 298px !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#fav-top-offers .image-overflow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+@media screen and (max-width: 767px) {
+  #fav-top-offers {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
