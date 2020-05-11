@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ==== Bootstrap ==== -->
-    <link rel="stylesheet" href="./css/main.css" />
     <!-- === Font === -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./font/flaticon.css" />
+    <!-- ========== swiper =========== -->
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <!-- ==== Bootstrap ==== -->
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Prodict List</title>
   </head>
   <body>
@@ -159,16 +161,341 @@
     <!--================================ nav end ====================================-->
 
     <!--================================== product show ======================================-->
-
     <section id="product-show">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6">hello</div>
-          <div class="col-12 col-lg-6">hello</div>
+        <div class="row position-relative">
+          <!-- product image -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-3 py-lg-3 d-none d-lg-block">
+                <div
+                  class="side-image d-flex flex-column justify-content-start align-items-start"
+                >
+                  <div class="side-image-box p-2">
+                    <img
+                      src="./imgs/product.png"
+                      alt="Product Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="side-image-box p-2">
+                    <img
+                      src="./imgs/product.png"
+                      alt="Product Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="side-image-box p-2">
+                    <img
+                      src="./imgs/product.png"
+                      alt="Product Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="side-image-box p-2">
+                    <img
+                      src="./imgs/product.png"
+                      alt="Product Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="side-image-box p-2">
+                    <img
+                      src="./imgs/product.png"
+                      alt="Product Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-9 px-0 px-md-3">
+                <div class="product-image-box w-100 py-3">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <!-- slide 1 -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./imgs/product.png"
+                          alt="Product Image"
+                          class="product-image w-100"
+                        />
+                      </div>
+                      <!-- slide 2 -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./imgs/product.png"
+                          alt="Product Image"
+                          class="product-image w-100"
+                        />
+                      </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product-details -->
+          <div class="col-12 col-md-6 px-md-4 px-2">
+            <!--================= details ===================-->
+            <div
+              class="details py-3 px-md-4 px-1 d-flex flex-md-column justify-content-between self-sligns-center"
+            >
+              <div>
+                <h1 class="heading heading-primary-lg font-weight-bold mb-1">
+                  Gold Crown
+                </h1>
+                <p class="paragraph-text text-muted mb-0">Gold Plated</p>
+              </div>
+              <div
+                class="mt-md-3 d-flex flex-column flex-md-row justify-content-start align-items-center"
+              >
+                <h1
+                  class="offer-price heading heading-primary text-primary mb-0"
+                >
+                  $&nbsp;11.12
+                </h1>
+                <p class="price ml-md-3 mb-0 paragraph-text text-muted">
+                  $&nbsp;21.12
+                </p>
+              </div>
+            </div>
+            <!--==================== detils end =====================-->
+
+            <!--==================== Quantity =====================-->
+            <div class="px-md-4 px-1">
+              <div
+                class="btn-group quantity-box overflow-hidden"
+                role="group"
+                aria-label="Basic example"
+              >
+                <!-- less btn -->
+                <button
+                  type="button"
+                  class="quantity-btn paragraph-text bg-light-grey border-0"
+                >
+                  <i class="flaticon-worldwide"></i>
+                </button>
+
+                <!-- paragraph text -->
+                <div
+                  class="px-2 d-flex justify-content-center align-items-center border-0 bg-light-grey-2
+                >
+                  <p class="paragraph-text mb-0">Quantity</p>
+                </div>
+
+                <!-- add button -->
+                <button
+                  type="button"
+                  class="quantity-btn paragraph-text bg-light-grey border-0"
+                >
+                  <i class="flaticon-worldwide"></i>
+                </button>
+              </div>
+            </div>
+            <!--==================== Quantity end =====================-->
+
+            <!--==================== Color =====================-->
+            <div class="px-md-4 px-1 mt-3 color-main-box">
+              <div
+                class="color-box d-inline-block border d-flex justify-content-start align-items-center py-1 shadow-sm bg-secondary"
+              >
+                <button
+                  class="color-btn p-2 rounded-circle shadow-sm bg-secondary border-0"
+                >
+                  <i class="flaticon-email text-dark paragrph-text"></i>
+                </button>
+
+                <!-- colors -->
+                <div
+                  class="color d-flex justify-content-start align-items-center ml-3"
+                >
+                  <div class="color-border p-1 rounded-circle mr-2">
+                    <div
+                      class="color-fill w-100 h-100 rounded-circle"
+                      style="background-color: rgb(0, 68, 255);"
+                    ></div>
+                  </div>
+
+                  <div class="color-border p-1 rounded-circle mr-2">
+                    <div
+                      class="color-fill w-100 h-100 rounded-circle"
+                      style="background-color: rgb(255, 0, 0);"
+                    ></div>
+                  </div>
+
+                  <div class="color-border p-1 rounded-circle mr-2">
+                    <div
+                      class="color-fill w-100 h-100 rounded-circle"
+                      style="background-color: rgb(255, 153, 0);"
+                    ></div>
+                  </div>
+
+                  <div class="color-border p-1 rounded-circle mr-2">
+                    <div
+                      class="color-fill w-100 h-100 rounded-circle"
+                      style="background-color: rgb(255, 230, 0);"
+                    ></div>
+                  </div>
+
+                  <div class="p-1">
+                    <i
+                      class="flaticon-worldwide paragraph-text-lg text-dark mb-0"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== Color end =====================-->
+
+            <!--==================== Button  =====================-->
+            <div class="px-md-4 px-1 text-center text-md-left">
+              <a href="#" class="btn btn-big btn-primary mt-5">Add To Cart</a>
+            </div>
+            <!--==================== Button end =====================-->
+          </div>
         </div>
       </div>
     </section>
-
     <!--================================== product show end ======================================-->
+
+    <!-- ========================== Product List ============================== -->
+    <section class="mb-5 mb-md-2 pb-5 pb-md-2" id="fav-product-page-list">
+      <div class="container">
+        <!-- === heading ==== -->
+        <h3
+          class="paragraph-text mb-2 font-weight-bold text-capitalize text-dark"
+        >
+          Similar items you may like
+        </h3>
+        <!--========= card box ==========-->
+        <div class="row mt-4">
+          <div class="col-md-4 col-lg-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 1st card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 1st card end -->
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 2nd card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 2nd card end -->
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 3rd card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 3rd card end -->
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-6 p-2 p-md-3 px-md-4">
+            <!-- 4th card -->
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0">
+                <div class="card-image-box overflow-hidden position-relative">
+                  <img
+                    class="card-img-top card-image"
+                    src="./imgs/cardImg-1.jpeg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body bg-background">
+                  <p class="paragraph-text text-muted mb-2">Yellow Chimes</p>
+                  <h5 class="paragraph-text text-dark font-weight-bold">
+                    Metal Rhodium Bracelet
+                  </h5>
+                  <h2
+                    class="heading heading-primary text-primary font-weight-bold"
+                  >
+                    $&nbsp;11.12
+                    <del class="paragraph-text-lg text-muted"
+                      >&nbsp;&nbsp;$&nbsp;21.12</del
+                    >
+                  </h2>
+                </div>
+              </div>
+            </a>
+            <!-- 4th card end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================== Product List End ============================== -->
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper-custom.js"></script>
   </body>
 </html>
