@@ -10780,6 +10780,7 @@ body {
 
 .bg-primary-light {
   background-color: rgba(238, 45, 79, 0.03) !important;
+  color: #fff;
 }
 
 .bg-background {
@@ -10788,6 +10789,12 @@ body {
 
 .bg-secondary {
   background-color: #fff !important;
+  color: #ee2d4f;
+}
+
+.bg-light-grey {
+  background-color: #f4f4f4 !important;
+  color: #373737 !important;
 }
 
 .big-heading {
@@ -10963,27 +10970,27 @@ body {
 }
 
 .card .card-img-top {
-  max-height: 298px !important;
+  min-height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.top-offer-2nd .card .card-img-top {
-  min-height: 228px;
-}
-
 @media screen and (max-width: 767px) {
-  .top-offer-2nd .card .card-img-top {
+  .card .card-img-top {
     min-height: 200px;
   }
 }
 
-#fav-deals-of-the-day .card .card-img-top {
-  min-height: 260px;
+#fav-top-offers .top-offer-1st .card .card-img-top {
+  max-height: 298px !important;
+}
+
+#fav-top-offers .top-offer-2nd .card .card-img-top {
+  min-height: 228px;
 }
 
 @media screen and (max-width: 767px) {
-  #fav-deals-of-the-day .card .card-img-top {
+  #fav-top-offers .top-offer-2nd .card .card-img-top {
     min-height: 200px;
   }
 }
@@ -11121,6 +11128,63 @@ body {
 
 @media screen and (max-width: 767px) {
   #fav-top-offers {
+    margin-top: 100px;
+  }
+}
+
+#fav-product-tag {
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 767px) {
+  #fav-product-tag {
+    margin-top: 100px;
+  }
+}
+
+#fav-product-tag .tag-box {
+  overflow-x: scroll;
+}
+
+#fav-product-tag .tag-box::-webkit-scrollbar {
+  display: none;
+}
+
+#fav-product-tag .tag-box .tag {
+  border-radius: 8px !important;
+}
+
+@media screen and (max-width: 767px) {
+  #fav-product-tag .tag-box .tag {
+    min-width: 65px;
+  }
+}
+
+#fav-product-tag .tag-box .tag > .cross {
+  display: none;
+}
+
+#fav-product-tag .tag-box .active {
+  background-color: #ee2d4f !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+  #fav-product-tag .tag-box .active {
+    min-width: 81px;
+  }
+}
+
+#fav-product-tag .tag-box .active > .cross {
+  display: block;
+}
+
+#product-show {
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 767px) {
+  #product-show {
     margin-top: 100px;
   }
 }
