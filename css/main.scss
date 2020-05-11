@@ -46,16 +46,34 @@ body {
 }
 
 .bg-primary-light {
-  background-color: $color-primary-light;
+  background-color: $color-primary-light !important;
+}
+
+.bg-background {
+  background-color: $frame-back !important;
+}
+
+.bg-secondary {
+  background-color: $color-secondary !important;
 }
 // ================================ Utilities end ================================
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ================================ Typography ================================
 
+// == heading
 .big-heading {
   font-size: 34px !important;
 }
 
+.heading {
+  font-weight: bold;
+  font-size: $bodyTextBlack;
+  &-primary {
+    font-size: 22px !important;
+  }
+}
+
+// == text
 .paragraph-text {
   font-size: 14px;
 }
@@ -71,6 +89,10 @@ body {
     color: $color-primary !important;
   }
 
+  &-secondary {
+    color: $color-secondary !important;
+  }
+
   &-dark {
     color: $bodyTextBlack !important;
   }
@@ -80,9 +102,13 @@ body {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ================================ Component ====================================
 
-// ===== navbar
+// ======== #fav-nav
 
 #fav-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999 !important;
   .nav {
     &-icon {
       font-size: 22px;
@@ -98,7 +124,12 @@ body {
     }
   }
 
-  .menu-icon:hover > .dropdown-box {
+  .menu-icon:hover > .dropdown-selector {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .profile-icon:hover > .dropdown-profile {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -112,12 +143,31 @@ body {
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.5s;
+
+    // @include responsive-max(767px) {
+    //   width: 100%;
+    //   top: -200px;
+    //   left: 0;
+    //   border: 0 !important;
+    // }
   }
 
   .selector-list {
     border-radius: 20px;
     .img-box {
       max-width: 20%;
+    }
+  }
+
+  // ======== profile
+  .dropdown-profile {
+    width: 420px !important;
+  }
+
+  .profile {
+    .img-box {
+      width: 80px;
+      max-height: 80px;
     }
   }
 }
@@ -160,7 +210,7 @@ body {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ================================= Pages ==========================================
 
-// ==================== Login signup Page ====================
+// ==================== Login signup Page =======
 
 // ============ #sign-in
 .input-main-box {
@@ -277,3 +327,33 @@ body {
 }
 
 // ========================= Login signup Page end ===========================
+
+// ========================= Home page ===============================
+
+// ======== #fav-top-offers
+
+#fav-top-offers {
+  margin-top: 130px;
+
+  .top-offer-1st {
+    .card {
+      .card-image-box {
+        border-radius: 20px;
+      }
+      .card-img-top {
+        max-height: 298px !important;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .image-overflow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black, 0.6);
+  }
+}
