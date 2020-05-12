@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./font/flaticon.css" />
-    <title>My Order</title>
+    <title>Shipping Address</title>
   </head>
   <body>
     <!--================================== nav ======================================-->
@@ -158,136 +158,162 @@
     </header>
     <!--================================ nav end ====================================-->
 
-    <!-- ==================================== checkout-header ===================================== -->
-    <section id="cart-checkout">
+    <!-- ==================================== Order-header ===================================== -->
+    <section id="order-header">
       <div class="container">
         <div class="main-box mx-auto">
-          <!-- heading -->
-          <div class="d-flex justify-content-between align-items-center">
-            <h1 class="heading heading-primary-lg mb-0">My Cart</h1>
-            <a href="#" class="btn btn-big btn-primary paragraph-text-lg"
-              >Check Out</a
-            >
-          </div>
-          <!-- heading -->
-          <!--============== order details ====================-->
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <!-- details title -->
-            <div class="details d-flex flex-column justify-content-between">
-              <p
-                class="paragraph-text text-muted font-weight-bold mb-0 text-capitalize"
-              >
-                order
-              </p>
-              <p
-                class="paragraph-text text-muted font-weight-bold mb-0 text-capitalize"
-              >
-                delivery
-              </p>
-            </div>
-            <!-- details title end -->
-
-            <!-- details value -->
-            <div class="details d-flex flex-column justify-content-between">
-              <p class="paragraph-text text-dark font-weight-bold mb-0">
-                $&nbsp;800.65
-              </p>
-              <p
-                class="paragraph-text text-dark font-weight-bold mb-0 text-capitalize"
-              >
-                free
-              </p>
-            </div>
-            <!-- details value end -->
-          </div>
-          <!--================ order details end =================-->
-          <!-- price -->
-          <div class="d-flex justify-content-between align-items-center mt-4">
-            <h1 class="heading heading-primary text-dark font-weight-bold mb-0">
-              Summery :
-            </h1>
-            <h1
-              class="heading heading-primary text-primary font-weight-bold mb-0"
-            >
-              $&nbsp;800.65
-            </h1>
-          </div>
-          <!-- price end -->
+          <h1 class="heading heading-primary-lg">Shipping Address</h1>
         </div>
       </div>
     </section>
-    <!-- ==================================== checkout-header end ===================================== -->
+    <!-- ==================================== Order-header end ===================================== -->
 
-    <!-- ==================================== user-details ===================================== -->
-    <section class="mt-5 pt-2 pt-md-5" id="user-details">
+    <!-- ==================================== Orders ===================================== -->
+    <section class="" id="shipping-address">
       <div class="container">
-        <div class="main-box mx-auto mb-5 pb-5 mb-md-2 pb-md-2">
-          <div class="row w-100 mx-0">
-            <!-- user datails -->
-            <div class="col-12 col-md-5 px-0">
+        <div class="main-box mx-auto mt-4">
+          <!-- ===================== 1st order ========================= -->
+          <div
+            class="p-md-3 p-2 mt-4 mt-md-5 bg-secondary shadow-sm rounded-lg"
+          >
+            <!--====================== subbox 1 =======================-->
+            <div
+              class="order-sub-box p-2 d-flex justify-content-between align-items-center"
+            >
+              <!-- order details -->
               <div
-                class="detail-heading p-1 py-2 w-100 d-flex justify-content-between align-items-center"
+                class="order-details d-flex flex-column justify-content-start"
               >
-                <p class="paragraph-text-lg mb-0 font-weight-bold text-dark">
-                  Shipping address
-                </p>
-                <a
-                  href="#"
-                  class="details-change paragraph-text-lg font-weight-bold text-decoration-none"
-                  >Change</a
+                <h1
+                  class="heading heading-primary text-dark mb-2 text-truncate"
                 >
-              </div>
-              <div
-                class="detail-box p-4 mt-2 mt-md-4 w-100 bg-secondary rounded-lg shadow-sm"
-              >
-                <p class="paragraph-text-lg font-weight-bold text-dark">
-                  Jane Doe
+                  John Doe
+                </h1>
+                <p class="paragraph-text-lg text-dark mb-2">
+                  ****&nbsp;****&nbsp;****&nbsp;1234
                 </p>
-                <div class="mt-3">
-                  <p class="paragraph-text text-dark mb-0">3 Newbridge Court</p>
-                  <p class="paragraph-text text-dark mb-0">
-                    Chino Hills, CA 91709, United States
-                  </p>
+                <p class="paragraph-text text-muted mb-0">
+                  Expiry: 08/24
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#"
+                    class="btn btn-small btn-secondary paragraph-text text-capitalize"
+                    >Set as primary address</a
+                  >
                 </div>
               </div>
-            </div>
-            <!-- user datails end -->
+              <!-- order details end -->
+              <!-- order pricing -->
+              <div
+                class="order-pricing d-flex flex-column justify-content-between"
+              >
+                <div class="text-right">
+                  <!-- edit btn -->
+                  <a
+                    href="#"
+                    class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                  >
+                    <i
+                      class="flaticon-email text-primary paragraph-text-lg"
+                    ></i>
+                  </a>
+                </div>
 
-            <!-- user payment details -->
-            <div class="col-12 col-md-5 offset-md-2 mt-4 mt-md-2 px-0">
-              <div
-                class="detail-heading p-1 py-2 w-100 d-flex justify-content-between align-items-center"
-              >
-                <p class="paragraph-text-lg mb-0 font-weight-bold text-dark">
-                  Payment
-                </p>
-                <a
-                  href="#"
-                  class="details-change paragraph-text-lg font-weight-bold text-decoration-none"
-                  >Change</a
-                >
-              </div>
-              <div
-                class="detail-box p-4 mt-2 mt-md-4 w-100 bg-secondary rounded-lg shadow-sm d-flex align-items-center"
-              >
-                <p class="mb-0 mr-3 payment-icon">
-                  <i class="flaticon-email"></i>
-                </p>
-                <div class="p-1">
-                  <p class="paragraph-text-lg text-dark font-weight-bold mb-0">
-                    Jane Doe
-                  </p>
-                  <p class="paragraph-text-lg text-dark font-weight-bold mb-0">
-                    ****&nbsp;****&nbsp;****&nbsp;1234
-                  </p>
+                <div class="text-right">
+                  <!-- delete btn -->
+                  <a
+                    href="#"
+                    class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                  >
+                    <i class="flaticon-call text-dark paragraph-text-lg"></i>
+                  </a>
                 </div>
               </div>
+              <!-- order pricing end -->
             </div>
-            <!-- user payment details end -->
+          </div>
+          <!-- ========================= 1st order end ================================= -->
+          <!-- ////////////////////////////////////// -->
+          <!-- ===================== 2nd order ========================= -->
+          <div
+            class="p-md-3 p-2 mt-4 mt-md-5 bg-secondary shadow-sm rounded-lg"
+          >
+            <!--====================== subbox 1 =======================-->
+            <div
+              class="order-sub-box p-2 d-flex justify-content-between align-items-center"
+            >
+              <!-- order details -->
+              <div
+                class="order-details d-flex flex-column justify-content-start"
+              >
+                <h1
+                  class="heading heading-primary text-dark mb-2 text-truncate"
+                >
+                  John Doe
+                </h1>
+                <p class="paragraph-text-lg text-dark mb-2">
+                  ****&nbsp;****&nbsp;****&nbsp;1234
+                </p>
+                <p class="paragraph-text text-muted mb-0">
+                  Expiry: 08/24
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#"
+                    class="btn btn-small active btn-secondary paragraph-text text-capitalize"
+                    >Using as primary address</a
+                  >
+                </div>
+              </div>
+              <!-- order details end -->
+              <!-- order pricing -->
+              <div
+                class="order-pricing d-flex flex-column justify-content-between"
+              >
+                <div class="text-right">
+                  <!-- edit btn -->
+                  <a
+                    href="#"
+                    class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                  >
+                    <i
+                      class="flaticon-email text-primary paragraph-text-lg"
+                    ></i>
+                  </a>
+                </div>
+
+                <div class="text-right">
+                  <!-- delete btn -->
+                  <a
+                    href="#"
+                    class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                  >
+                    <i class="flaticon-call text-dark paragraph-text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- order pricing end -->
+            </div>
+          </div>
+          <!-- ========================= 2nd order end ================================= -->
+
+          <!--============ add btn ================-->
+          <div class="d-flex justify-content-center py-5 mb-5 mb-md-0">
+            <!-- edit btn -->
+            <a
+              href="#"
+              class="btn-add btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+            >
+              <i class="flaticon-email text-secondary paragraph-text-lg"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- ==================================== user-details  end ===================================== -->
+    <!-- ==================================== Orders End ===================================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

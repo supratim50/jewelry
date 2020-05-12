@@ -173,22 +173,6 @@ body {
     color: $green !important;
   }
 }
-// ==== for <a/> tag
-a {
-  .text {
-    &-primary:hover {
-      color: $color-primary !important;
-    }
-
-    &-secondary {
-      color: $color-secondary !important;
-    }
-
-    &-dark {
-      color: $bodyTextBlack !important;
-    }
-  }
-}
 
 // ================================ Typography End ================================
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -327,6 +311,10 @@ a {
       width: 30px;
       height: 30px;
     }
+  }
+
+  &-add {
+    background-color: $color-primary !important;
   }
 }
 
@@ -568,6 +556,35 @@ a {
   }
 }
 
+#filter-sort {
+  .sort {
+    &:hover > .sort-drop-down {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+    }
+  }
+
+  .sort-drop-down {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.5s;
+
+    z-index: 99 !important;
+  }
+
+  .drop-down-item {
+    &:hover {
+      color: $color-primary !important;
+    }
+  }
+}
+
 // =========================== Product List page end ============================
 
 // =========================== Product page ============================
@@ -608,28 +625,37 @@ a {
   }
 
   // ======= color
-  .color-btn {
-    width: 38px !important;
-    height: 38px !important;
-    background-color: $color-secondary;
-  }
 
-  .color-main-box {
-    z-index: 100 !important;
-    @include responsive-max(767px) {
-      position: absolute;
-      top: -45%;
-    }
-  }
   .color {
+    &-main-box {
+      z-index: 100 !important;
+      @include responsive-max(767px) {
+        position: absolute;
+        top: -45%;
+      }
+    }
+
     &-box {
       border-radius: 25px;
+      transition: 0.8s;
+    }
+
+    &-btn {
+      width: 38px !important;
+      height: 38px !important;
+      background-color: $color-secondary;
+
+      &:hover ~ .color-border {
+        display: block !important;
+      }
     }
 
     &-border {
       width: 38px;
       height: 38px;
       border: 1px solid $color-primary;
+      // display: none !important;
+      transition: 0.8s;
     }
   }
 }
@@ -672,33 +698,37 @@ a {
 }
 
 // ============ #order
-#orders {
-  .order {
-    // order-sub-box
-    &-sub-box {
-      .paragraph-text-lg,
-      .heading-primary {
-        @include responsive-max(491px) {
-          font-size: 14px !important;
-        }
-      }
-      .paragraph-text {
-        @include responsive-max(491px) {
-          font-size: 12px !important;
-        }
+.order {
+  // order-sub-box
+  &-sub-box {
+    .paragraph-text-lg,
+    .heading-primary {
+      @include responsive-max(491px) {
+        font-size: 14px !important;
       }
     }
-
-    // order-details
-    &-details {
-      max-width: 50%;
-      min-height: 130px;
+    .paragraph-text {
+      @include responsive-max(491px) {
+        font-size: 12px !important;
+      }
     }
+  }
 
-    // order-pricing
-    &-pricing {
-      max-width: 50%;
-      min-height: 130px;
+  // order-details
+  &-details {
+    max-width: 50%;
+    min-height: 170px !important;
+    @include responsive-max(767px) {
+      min-height: 140px !important;
+    }
+  }
+
+  // order-pricing
+  &-pricing {
+    max-width: 50%;
+    min-height: 170px;
+    @include responsive-max(767px) {
+      min-height: 140px !important;
     }
   }
 }
@@ -768,6 +798,7 @@ a {
 #user-details {
   .detail-box {
     width: 45%;
+    min-height: 137px;
   }
   .details-change {
     color: $color-primary;
@@ -779,6 +810,21 @@ a {
 
 // ============================== Checkout Page End ====================================
 
+// ============================= Shipping Page =======================================
+
+// ================= #shipping-address
+#shipping-address {
+  .order-details {
+    .active {
+      background-color: $color-primary !important;
+      color: $color-secondary !important;
+    }
+  }
+
+  .paragraph-text {
+    font-size: 10px !important;
+  }
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // ============== SWIPER JS =============
