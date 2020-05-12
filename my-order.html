@@ -30,7 +30,7 @@
             <i class="nav-icon flaticon-worldwide mr-5 mr-md-5 text-dark"></i>
             <!-- </a> -->
             <!--=========== bottom nav ==============-->
-            <div class="nav-bottom-box py-3 py-md-0 d-flex align-items-center">
+            <div class="nav-bottom-box py-2 py-md-0 d-flex align-items-center">
               <ul
                 class="d-flex justify-content-around align-items-center self-sligns-center mb-0 pl-0 w-100"
               >
@@ -161,7 +161,7 @@
     <!-- ==================================== Order-header ===================================== -->
     <section id="order-header">
       <div class="container">
-        <div class="main-order-box mx-auto">
+        <div class="main-box mx-auto">
           <h1 class="heading heading-primary-lg">My Orders</h1>
           <div
             class="selector-box px-md-3 py-3 d-flex justify-content-center align-items-center"
@@ -190,16 +190,20 @@
     <!-- ==================================== Orders ===================================== -->
     <section class="" id="orders">
       <div class="container">
-        <div class="main-order-box mx-auto mt-4">
-          <div class="order-box p-md-4 p-2 bg-secondary shadow-sm rounded-lg">
+        <div class="main-box mx-auto mt-4">
+          <!-- ===================== 1st order ========================= -->
+          <div class="p-md-4 p-2mt-4 mt-md-5 bg-secondary shadow-sm rounded-lg">
+            <!--====================== subbox 1 =======================-->
             <div
-              class="order-sub-box p-2 d-flex justify-content-between align-items-center"
+              class="order-sub-box p-2 py-md-4 d-flex justify-content-between align-items-center"
             >
               <!-- order details -->
               <div
                 class="order-details d-flex flex-column justify-content-start"
               >
-                <h1 class="heading heading-primary text-dark mb-2">
+                <h1
+                  class="heading heading-primary text-dark mb-2 text-truncate"
+                >
                   Order No #947034
                 </h1>
                 <p class="paragraph-text text-muted mb-0">
@@ -228,9 +232,17 @@
                     >$&nbsp;700</span
                   >
                 </p>
+                <!-- collaps button -->
                 <div class="mt-auto text-right">
-                  <a href="#" class="btn"
-                    ><i
+                  <a
+                    class="btn shadow-none"
+                    data-toggle="collapse"
+                    href="#hidden-data"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <i
                       class="flaticon-worldwide paragraph-text-lg text-dark"
                     ></i
                   ></a>
@@ -238,10 +250,328 @@
               </div>
               <!-- order pricing end -->
             </div>
+            <!--============================= subbox 1 end ============================-->
+            <!-- ///////////////////////////////////////////////////////////// -->
+            <div id="hidden-data" class="collapse">
+              <!--============================ subbox 2 ================================-->
+              <hr />
+              <div
+                class="order-sub-box p-2 py-md-4 d-flex justify-content-between align-items-center"
+              >
+                <!-- order details -->
+                <div
+                  class="order-details d-flex flex-column justify-content-start"
+                >
+                  <h1
+                    class="text-green paragraph-text-lg font-weight-bold mb-3"
+                  >
+                    Delivered
+                  </h1>
+                  <p class="text-dark paragraph-text-lg font-weight-bold mb-2">
+                    Shipping data
+                  </p>
+                  <p
+                    class="text-dark paragraph-text text-muted mb-0 text-truncate"
+                  >
+                    3 Newbridge Court, Chino Hills, CA 91709, US Chino Hills, CA
+                    91709, US Chino Hills, CA 91709, US
+                  </p>
+                  <p
+                    class="text-dark paragraph-text text-muted mt-auto mb-0 text-truncate"
+                  >
+                    Promo :
+                    <span class="text-dark paragraph-text-lg font-weight-bold"
+                      >test1d, Flat $100 off during testing period</span
+                    >
+                  </p>
+                </div>
+                <!-- order details end -->
+                <!-- order pricing -->
+                <div
+                  class="order-pricing d-flex flex-column justify-content-start"
+                >
+                  <h1 class="paragraph-text text-green text-right mb-3">
+                    05-12-2019
+                  </h1>
+                </div>
+                <!-- order pricing end -->
+              </div>
+              <!--======================= subbox 2 end =======================-->
+              <!--============================ subbox 3 =========================-->
+              <hr />
+              <div class="order-sub-box p-2 py-md-4">
+                <p class="paragraph-text text-muted mb-3">
+                  Items : &nbsp;<span
+                    class="text-dark paragraph-text-lg font-weight-bold"
+                    >3</span
+                  >
+                </p>
+                <!-- 1st item -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="py-2 w-50 mb-1">
+                    <p
+                      class="text-dark paragraph-text font-weight-bold mb-2 text-truncate"
+                    >
+                      Metal Rhodium Bracelet
+                    </p>
+                    <p class="paragraph-text text-muted mb-0">
+                      Quantity : &nbsp;<span
+                        class="text-dark paragraph-text font-weight-bold"
+                        >3</span
+                      >
+                    </p>
+                  </div>
+                  <p class="paragraph-text-lg font-weight-bold text-primary">
+                    $&nbsp;11.27
+                  </p>
+                </div>
+                <!-- 1st item end -->
+                <!-- 2nd item -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="py-2 w-50">
+                    <p
+                      class="text-dark paragraph-text font-weight-bold mb-2 text-truncate"
+                    >
+                      Metal Rhodium Bracelet
+                    </p>
+                    <p class="paragraph-text text-muted mb-0">
+                      Quantity : &nbsp;<span
+                        class="text-dark paragraph-text font-weight-bold"
+                        >3</span
+                      >
+                    </p>
+                  </div>
+                  <p class="paragraph-text-lg font-weight-bold text-primary">
+                    $&nbsp;11.27
+                  </p>
+                </div>
+                <!-- 2nd item end -->
+                <!-- 3rd item -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="py-2 w-50">
+                    <p
+                      class="text-dark paragraph-text font-weight-bold mb-2 text-truncate"
+                    >
+                      Metal Rhodium Bracelet
+                    </p>
+                    <p class="paragraph-text text-muted mb-0">
+                      Quantity : &nbsp;<span
+                        class="text-dark paragraph-text font-weight-bold"
+                        >3</span
+                      >
+                    </p>
+                  </div>
+                  <p class="paragraph-text-lg font-weight-bold text-primary">
+                    $&nbsp;11.27
+                  </p>
+                </div>
+                <!-- 3rd item end -->
+              </div>
+              <!--========================== subbox 3 end ===================================-->
+            </div>
           </div>
+          <!-- ========================= 1st order end ================================= -->
+
+          <!-- ===================== 2nd order ========================= -->
+          <div
+            class="p-md-4 p-2 mt-4 mt-md-5 mb-3 bg-secondary shadow-sm rounded-lg"
+          >
+            <!--====================== subbox 1 =======================-->
+            <div
+              class="order-sub-box p-2 py-md-4 d-flex justify-content-between align-items-center"
+            >
+              <!-- order details -->
+              <div
+                class="order-details d-flex flex-column justify-content-start"
+              >
+                <h1
+                  class="heading heading-primary text-dark mb-2 text-truncate"
+                >
+                  Order No #947034
+                </h1>
+                <p class="paragraph-text text-muted mb-0">
+                  Quantity : &nbsp;<span
+                    class="text-dark paragraph-text-lg font-weight-bold"
+                    >3</span
+                  >
+                </p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-secondary paragraph-text"
+                    >Reorder</a
+                  >
+                </div>
+              </div>
+              <!-- order details end -->
+              <!-- order pricing -->
+              <div
+                class="order-pricing d-flex flex-column justify-content-start"
+              >
+                <h1 class="paragraph-text text-muted text-right mb-3">
+                  05-12-2019
+                </h1>
+                <p class="paragraph-text text-muted text-right mb-0">
+                  Total Amount : &nbsp;<span
+                    class="text-dark paragraph-text-lg font-weight-bold"
+                    >$&nbsp;700</span
+                  >
+                </p>
+                <!-- collaps button -->
+                <div class="mt-auto text-right">
+                  <a
+                    class="btn shadow-none"
+                    data-toggle="collapse"
+                    href="#hidden-data-2"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <i
+                      class="flaticon-worldwide paragraph-text-lg text-dark"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+              <!-- order pricing end -->
+            </div>
+            <!--============================= subbox 1 end ============================-->
+            <!-- ///////////////////////////////////////////////////////////// -->
+            <div id="hidden-data-2" class="collapse">
+              <!--============================ subbox 2 ================================-->
+              <hr />
+              <div
+                class="order-sub-box p-2 py-md-4 d-flex justify-content-between align-items-center"
+              >
+                <!-- order details -->
+                <div
+                  class="order-details d-flex flex-column justify-content-start"
+                >
+                  <h1
+                    class="text-green paragraph-text-lg font-weight-bold mb-3"
+                  >
+                    Delivered
+                  </h1>
+                  <p class="text-dark paragraph-text-lg font-weight-bold mb-2">
+                    Shipping data
+                  </p>
+                  <p
+                    class="text-dark paragraph-text text-muted mb-0 text-truncate"
+                  >
+                    3 Newbridge Court, Chino Hills, CA 91709, US Chino Hills, CA
+                    91709, US Chino Hills, CA 91709, US
+                  </p>
+                  <p
+                    class="text-dark paragraph-text text-muted mt-auto mb-0 text-truncate"
+                  >
+                    Promo :
+                    <span class="text-dark paragraph-text-lg font-weight-bold"
+                      >test1d, Flat $100 off during testing period</span
+                    >
+                  </p>
+                </div>
+                <!-- order details end -->
+                <!-- order pricing -->
+                <div
+                  class="order-pricing d-flex flex-column justify-content-start"
+                >
+                  <h1 class="paragraph-text text-green text-right mb-3">
+                    05-12-2019
+                  </h1>
+                </div>
+                <!-- order pricing end -->
+              </div>
+              <!--======================= subbox 2 end =======================-->
+              <!--============================ subbox 3 =========================-->
+              <hr />
+              <div class="order-sub-box p-2 py-md-4">
+                <p class="paragraph-text text-muted mb-3">
+                  Items : &nbsp;<span
+                    class="text-dark paragraph-text-lg font-weight-bold"
+                    >3</span
+                  >
+                </p>
+                <!-- 1st item -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="py-2 w-50 mb-1">
+                    <p
+                      class="text-dark paragraph-text font-weight-bold mb-2 text-truncate"
+                    >
+                      Metal Rhodium Bracelet
+                    </p>
+                    <p class="paragraph-text text-muted mb-0">
+                      Quantity : &nbsp;<span
+                        class="text-dark paragraph-text font-weight-bold"
+                        >3</span
+                      >
+                    </p>
+                  </div>
+                  <p class="paragraph-text-lg font-weight-bold text-primary">
+                    $&nbsp;11.27
+                  </p>
+                </div>
+                <!-- 1st item end -->
+                <!-- 2nd item -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="py-2 w-50">
+                    <p
+                      class="text-dark paragraph-text font-weight-bold mb-2 text-truncate"
+                    >
+                      Metal Rhodium Bracelet
+                    </p>
+                    <p class="paragraph-text text-muted mb-0">
+                      Quantity : &nbsp;<span
+                        class="text-dark paragraph-text font-weight-bold"
+                        >3</span
+                      >
+                    </p>
+                  </div>
+                  <p class="paragraph-text-lg font-weight-bold text-primary">
+                    $&nbsp;11.27
+                  </p>
+                </div>
+                <!-- 2nd item end -->
+                <!-- 3rd item -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="py-2 w-50">
+                    <p
+                      class="text-dark paragraph-text font-weight-bold mb-2 text-truncate"
+                    >
+                      Metal Rhodium Bracelet
+                    </p>
+                    <p class="paragraph-text text-muted mb-0">
+                      Quantity : &nbsp;<span
+                        class="text-dark paragraph-text font-weight-bold"
+                        >3</span
+                      >
+                    </p>
+                  </div>
+                  <p class="paragraph-text-lg font-weight-bold text-primary">
+                    $&nbsp;11.27
+                  </p>
+                </div>
+                <!-- 3rd item end -->
+              </div>
+              <!--========================== subbox 3 end ===================================-->
+            </div>
+          </div>
+          <!-- ========================= 2nd order end ================================= -->
         </div>
       </div>
     </section>
     <!-- ==================================== Orders End ===================================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==== Bootstrap ==== -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- === Font === -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./font/flaticon.css" />
+    <title>My Order</title>
+  </head>
+  <body>
+    <!--================================== nav ======================================-->
+    <header id="fav-nav" class="bg-background">
+      <div class="container">
+        <div
+          class="nav-bar py-3 py-md-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="py-2">
+            <h1 class="logo h3 mb-0">Brand Name</h1>
+          </div>
+          <div
+            class="p-2 d-flex justify-content-between align-items-center nav-icon-box"
+          >
+            <!-- <a href="#" class="text-decoration-none"> -->
+            <i class="nav-icon flaticon-worldwide mr-5 mr-md-5 text-dark"></i>
+            <!-- </a> -->
+            <!--=========== bottom nav ==============-->
+            <div class="nav-bottom-box py-2 py-md-0 d-flex align-items-center">
+              <ul
+                class="d-flex justify-content-around align-items-center self-sligns-center mb-0 pl-0 w-100"
+              >
+                <!-- home icon -->
+                <li class="nav-link d-md-none mr-md-5">
+                  <i class="nav-icon flaticon-care"></i>
+                </li>
+                <!--======================== menu icon =================================-->
+                <li class="nav-link menu-icon mr-md-5 position-relative">
+                  <i class="nav-icon flaticon-money-bag"></i>
+                  <!-- dropdown  -->
+                  <div
+                    class="dropdown-box dropdown-selector bg-background position-absolute rounded-lg p-4 shadow-sm"
+                  >
+                    <!-- selector  -->
+                    <div class="text-center mb-3 py-3">
+                      <div class="selector-box d-inline-block">
+                        <a
+                          href="#"
+                          class="btn active btn-small font-weight-bold"
+                          >Categories</a
+                        >
+                        <a href="#" class="btn btn-small font-weight-bold"
+                          >Brand</a
+                        >
+                      </div>
+                    </div>
+                    <!-- selector end -->
+                    <!-- menu  -->
+                    <div
+                      class="selector-list bg-primary-light mt-4 p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div
+                        class="text-box d-flex justify-content-center flex-column"
+                      >
+                        <p class="mb-0 paragraph-text-lg font-weight-bold">
+                          Rings
+                        </p>
+                        <p class="mb-0 paragraph-text text-primary">
+                          Various Type
+                        </p>
+                      </div>
+                      <div class="img-box">
+                        <img
+                          src="./imgs/wedding-rings.png"
+                          class="list-img img-fluid"
+                          alt="List Images"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- menu end -->
+                  </div>
+                  <!-- dropdown end -->
+                </li>
+                <!--======================= profile ===============================-->
+                <li class="nav-link profile-icon position-relative">
+                  <i class="nav-icon flaticon-pig"></i>
+                  <!-- dropdown  -->
+                  <div
+                    class="dropdown-box dropdown-profile bg-background position-absolute rounded-lg p-4 shadow-sm"
+                  >
+                    <!-- profile start  -->
+                    <div
+                      class="py-3 mb-3 profile d-flex justify-content-between"
+                    >
+                      <!-- profile image -->
+                      <div
+                        class="img-box rounded-circle border overflow-hidden"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./imgs/face1.jpg"
+                          alt="Profile Image"
+                        />
+                      </div>
+                      <!-- details -->
+                      <div class="detail-box ml-2 mr-auto">
+                        <h2
+                          class="heading heading-primary mb-1 font-weight-bold"
+                        >
+                          Supratim Mondal
+                        </h2>
+                        <p class="text-muted paragrph-text mb-0">
+                          matildabrown@mail.com
+                        </p>
+                      </div>
+                      <!-- edit -->
+                      <div class="edit-box">
+                        <i class="flaticon-email text-right text-primary"></i>
+                      </div>
+                    </div>
+                    <!-- profile end -->
+
+                    <!-- profile list -->
+                    <div
+                      class="selector-list bg-secondary shadow-sm mt-4 p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div
+                        class="text-box d-flex justify-content-center flex-column"
+                      >
+                        <p class="mb-0 paragraph-text-lg font-weight-bold">
+                          My orders
+                        </p>
+                        <p class="mb-0 paragraph-text text-dark">
+                          Check the status of your orders
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- dropdown end -->
+                </li>
+              </ul>
+            </div>
+            <!-- bottom nav End -->
+            <a href="#" class="text-decoration-none">
+              <i
+                class="nav-icon flaticon-organization ml-md-5 text-primary"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--================================ nav end ====================================-->
+
+    <!-- ==================================== checkout-header ===================================== -->
+    <section id="cart-checkout">
+      <div class="container">
+        <div class="main-box mx-auto">
+          <!-- heading -->
+          <div class="d-flex justify-content-between align-items-center">
+            <h1 class="heading heading-primary-lg mb-0">My Cart</h1>
+            <a href="#" class="btn btn-big btn-primary paragraph-text-lg"
+              >Check Out</a
+            >
+          </div>
+          <!-- heading -->
+          <!--============== order details ====================-->
+          <div class="d-flex justify-content-between align-items-center mt-5">
+            <!-- details title -->
+            <div class="details d-flex flex-column justify-content-between">
+              <p
+                class="paragraph-text text-muted font-weight-bold mb-0 text-capitalize"
+              >
+                order
+              </p>
+              <p
+                class="paragraph-text text-muted font-weight-bold mb-0 text-capitalize"
+              >
+                delivery
+              </p>
+            </div>
+            <!-- details title end -->
+
+            <!-- details value -->
+            <div class="details d-flex flex-column justify-content-between">
+              <p class="paragraph-text text-dark font-weight-bold mb-0">
+                $&nbsp;800.65
+              </p>
+              <p
+                class="paragraph-text text-dark font-weight-bold mb-0 text-capitalize"
+              >
+                free
+              </p>
+            </div>
+            <!-- details value end -->
+          </div>
+          <!--================ order details end =================-->
+          <!-- price -->
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <h1 class="heading heading-primary text-dark font-weight-bold mb-0">
+              Summery :
+            </h1>
+            <h1
+              class="heading heading-primary text-primary font-weight-bold mb-0"
+            >
+              $&nbsp;800.65
+            </h1>
+          </div>
+          <!-- price end -->
+        </div>
+      </div>
+    </section>
+    <!-- ==================================== checkout-header end ===================================== -->
+
+    <!-- ==================================== user-details ===================================== -->
+    <section class="mt-5 pt-2 pt-md-5" id="user-details">
+      <div class="container">
+        <div class="main-box mx-auto mb-5 pb-5 mb-md-2 pb-md-2">
+          <div class="row w-100 mx-0">
+            <!-- user datails -->
+            <div class="col-12 col-md-5 px-0">
+              <div
+                class="detail-box p-1 py-2 w-100 d-flex justify-content-between align-items-center"
+              >
+                <p class="paragraph-text-lg mb-0 font-weight-bold text-dark">
+                  Shipping address
+                </p>
+                <a
+                  href="#"
+                  class="details-change paragraph-text-lg font-weight-bold text-decoration-none"
+                  >Change</a
+                >
+              </div>
+              <div
+                class="detail-box p-4 mt-2 mt-md-3 w-100 bg-secondary rounded-lg shadow-sm"
+              >
+                <p class="paragraph-text-lg font-weight-bold text-dark">
+                  Jane Doe
+                </p>
+                <div class="mt-3">
+                  <p class="paragraph-text text-dark mb-0">3 Newbridge Court</p>
+                  <p class="paragraph-text text-dark mb-0">
+                    Chino Hills, CA 91709, United States
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- user datails end -->
+
+            <!-- user payment details -->
+            <div class="col-12 col-md-5 offset-md-2 mt-4 mt-md-2 px-0">
+              <div
+                class="detail-box p-1 py-2 w-100 d-flex justify-content-between align-items-center"
+              >
+                <p class="paragraph-text-lg mb-0 font-weight-bold text-dark">
+                  Payment
+                </p>
+                <a
+                  href="#"
+                  class="details-change paragraph-text-lg font-weight-bold text-decoration-none"
+                  >Change</a
+                >
+              </div>
+              <div
+                class="detail-box p-4 mt-2 mt-md-3 w-100 bg-secondary rounded-lg shadow-sm d-flex align-items-center"
+              >
+                <p class="mb-0 mr-3 payment-icon">
+                  <i class="flaticon-email"></i>
+                </p>
+                <div class="p-1">
+                  <p class="paragraph-text-lg text-dark font-weight-bold mb-0">
+                    Jane Doe
+                  </p>
+                  <p class="paragraph-text-lg text-dark font-weight-bold mb-0">
+                    ****&nbsp;****&nbsp;****&nbsp;1234
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- user payment details end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================== user-details  end ===================================== -->
+  </body>
+</html>

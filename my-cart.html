@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==== Bootstrap ==== -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- === Font === -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./font/flaticon.css" />
+    <title>My Order</title>
+  </head>
+  <body>
+    <!--================================== nav ======================================-->
+    <header id="fav-nav" class="bg-background">
+      <div class="container">
+        <div
+          class="nav-bar py-3 py-md-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="py-2">
+            <h1 class="logo h3 mb-0">Brand Name</h1>
+          </div>
+          <div
+            class="p-2 d-flex justify-content-between align-items-center nav-icon-box"
+          >
+            <!-- <a href="#" class="text-decoration-none"> -->
+            <i class="nav-icon flaticon-worldwide mr-5 mr-md-5 text-dark"></i>
+            <!-- </a> -->
+            <!--=========== bottom nav ==============-->
+            <div class="nav-bottom-box py-2 py-md-0 d-flex align-items-center">
+              <ul
+                class="d-flex justify-content-around align-items-center self-sligns-center mb-0 pl-0 w-100"
+              >
+                <!-- home icon -->
+                <li class="nav-link d-md-none mr-md-5">
+                  <i class="nav-icon flaticon-care"></i>
+                </li>
+                <!--======================== menu icon =================================-->
+                <li class="nav-link menu-icon mr-md-5 position-relative">
+                  <i class="nav-icon flaticon-money-bag"></i>
+                  <!-- dropdown  -->
+                  <div
+                    class="dropdown-box dropdown-selector bg-background position-absolute rounded-lg p-4 shadow-sm"
+                  >
+                    <!-- selector  -->
+                    <div class="text-center mb-3 py-3">
+                      <div class="selector-box d-inline-block">
+                        <a
+                          href="#"
+                          class="btn active btn-small font-weight-bold"
+                          >Categories</a
+                        >
+                        <a href="#" class="btn btn-small font-weight-bold"
+                          >Brand</a
+                        >
+                      </div>
+                    </div>
+                    <!-- selector end -->
+                    <!-- menu  -->
+                    <div
+                      class="selector-list bg-primary-light mt-4 p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div
+                        class="text-box d-flex justify-content-center flex-column"
+                      >
+                        <p class="mb-0 paragraph-text-lg font-weight-bold">
+                          Rings
+                        </p>
+                        <p class="mb-0 paragraph-text text-primary">
+                          Various Type
+                        </p>
+                      </div>
+                      <div class="img-box">
+                        <img
+                          src="./imgs/wedding-rings.png"
+                          class="list-img img-fluid"
+                          alt="List Images"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- menu end -->
+                  </div>
+                  <!-- dropdown end -->
+                </li>
+                <!--======================= profile ===============================-->
+                <li class="nav-link profile-icon position-relative">
+                  <i class="nav-icon flaticon-pig"></i>
+                  <!-- dropdown  -->
+                  <div
+                    class="dropdown-box dropdown-profile bg-background position-absolute rounded-lg p-4 shadow-sm"
+                  >
+                    <!-- profile start  -->
+                    <div
+                      class="py-3 mb-3 profile d-flex justify-content-between"
+                    >
+                      <!-- profile image -->
+                      <div
+                        class="img-box rounded-circle border overflow-hidden"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="./imgs/face1.jpg"
+                          alt="Profile Image"
+                        />
+                      </div>
+                      <!-- details -->
+                      <div class="detail-box ml-2 mr-auto">
+                        <h2
+                          class="heading heading-primary mb-1 font-weight-bold"
+                        >
+                          Supratim Mondal
+                        </h2>
+                        <p class="text-muted paragrph-text mb-0">
+                          matildabrown@mail.com
+                        </p>
+                      </div>
+                      <!-- edit -->
+                      <div class="edit-box">
+                        <i class="flaticon-email text-right text-primary"></i>
+                      </div>
+                    </div>
+                    <!-- profile end -->
+
+                    <!-- profile list -->
+                    <div
+                      class="selector-list bg-secondary shadow-sm mt-4 p-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div
+                        class="text-box d-flex justify-content-center flex-column"
+                      >
+                        <p class="mb-0 paragraph-text-lg font-weight-bold">
+                          My orders
+                        </p>
+                        <p class="mb-0 paragraph-text text-dark">
+                          Check the status of your orders
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- dropdown end -->
+                </li>
+              </ul>
+            </div>
+            <!-- bottom nav End -->
+            <a href="#" class="text-decoration-none">
+              <i
+                class="nav-icon flaticon-organization ml-md-5 text-primary"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--================================ nav end ====================================-->
+
+    <!-- ==================================== Order-header ===================================== -->
+    <section id="cart-header">
+      <div class="container">
+        <div class="main-box mx-auto">
+          <div class="d-flex justify-content-between align-items-center">
+            <h1 class="heading heading-primary-lg mb-0">My Cart</h1>
+            <a href="#" class="btn btn-big btn-primary paragraph-text-lg"
+              >Check Out</a
+            >
+          </div>
+          <div class="p-2">
+            <a
+              href="#"
+              class="apply-promocode btn btn-small border-0 bg-primary-light paragraph-text mt-5"
+              >Apply Promocode</a
+            >
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-5">
+            <h1 class="heading heading-primary text-dark font-weight-bold mb-0">
+              Total :
+            </h1>
+            <h1
+              class="heading heading-primary text-primary font-weight-bold mb-0"
+            >
+              $&nbsp;800.65
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================== Order-header end ===================================== -->
+
+    <!-- ==================================== Orders ===================================== -->
+    <section class="" id="carts">
+      <div class="container">
+        <div class="main-box mx-auto mt-4 mb-5 mb-md-2 pb-5 pb-md-2">
+          <div class="p-md-4 p-2 bg-secondary shadow-sm rounded-lg">
+            <div class="row w-100 mx-0">
+              <!-- cart 1 -->
+              <div class="col-12 col-lg-6 p-md-3 p-0 mb-4 mb-md-0">
+                <div class="row w-100 mx-0">
+                  <div class="col-5 p-1 d-flex justify-content-center">
+                    <div class="img-box w-100">
+                      <img
+                        class="product-image"
+                        src="./imgs/cardImg-3.jpg"
+                        alt="Product Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-7 p-1">
+                    <!--================= details ===================-->
+                    <div
+                      class="details py-1 px-md-4 px-1 d-flex flex-md-column justify-content-between self-sligns-center"
+                    >
+                      <div>
+                        <h1
+                          class="paragraph-text-lg font-weight-bold mb-1 text-dark text-truncate"
+                        >
+                          Metal Rhodium Bracelet
+                        </h1>
+                        <p class="paragraph-text text-muted mb-0">
+                          Quantity :
+                          <span class="paragraph-text-lg text-dark"
+                            >&nbsp;3</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <!--==================== detils end =====================-->
+
+                    <!--==================== Quantity =====================-->
+                    <div class="px-md-4 px-1 mt-2">
+                      <div
+                        class="btn-group quantity-box overflow-hidden"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <!-- less btn -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+
+                        <!-- paragraph text -->
+                        <div
+                          class="px-2 d-flex justify-content-center align-items-center border-0 bg-light-grey-2"
+                        >
+                          <p class="paragraph-text mb-0">Quantity</p>
+                        </div>
+
+                        <!-- add button -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--==================== Quantity end =====================-->
+
+                    <!-- ======================= price ======================= -->
+                    <div
+                      class="px-md-4 px-1 d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <p class="heading heading-primary text-primary mb-0">
+                        $&nbsp;11.12
+                      </p>
+
+                      <!-- delete btn -->
+                      <a
+                        href="#"
+                        class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                      >
+                        <i
+                          class="flaticon-call text-dark paragraph-text-lg"
+                        ></i>
+                      </a>
+                    </div>
+                    <!-- ======================= price end ======================= -->
+                  </div>
+                </div>
+              </div>
+              <!-- cart 1 end -->
+              <!-- cart 2 -->
+              <div class="col-12 col-lg-6 p-md-3 p-0 mb-4 mb-md-0">
+                <div class="row w-100 mx-0">
+                  <div class="col-5 p-1 d-flex justify-content-center">
+                    <div class="img-box w-100">
+                      <img
+                        class="product-image"
+                        src="./imgs/cardImg-3.jpg"
+                        alt="Product Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-7 p-1">
+                    <!--================= details ===================-->
+                    <div
+                      class="details py-1 px-md-4 px-1 d-flex flex-md-column justify-content-between self-sligns-center"
+                    >
+                      <div>
+                        <h1
+                          class="paragraph-text-lg font-weight-bold mb-1 text-dark text-truncate"
+                        >
+                          Metal Rhodium Bracelet
+                        </h1>
+                        <p class="paragraph-text text-muted mb-0">
+                          Quantity :
+                          <span class="paragraph-text-lg text-dark"
+                            >&nbsp;3</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <!--==================== detils end =====================-->
+
+                    <!--==================== Quantity =====================-->
+                    <div class="px-md-4 px-1 mt-2">
+                      <div
+                        class="btn-group quantity-box overflow-hidden"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <!-- less btn -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+
+                        <!-- paragraph text -->
+                        <div
+                          class="px-2 d-flex justify-content-center align-items-center border-0 bg-light-grey-2"
+                        >
+                          <p class="paragraph-text mb-0">Quantity</p>
+                        </div>
+
+                        <!-- add button -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--==================== Quantity end =====================-->
+
+                    <!-- ======================= price ======================= -->
+                    <div
+                      class="px-md-4 px-1 d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <p class="heading heading-primary text-primary mb-0">
+                        $&nbsp;11.12
+                      </p>
+
+                      <!-- delete btn -->
+                      <a
+                        href="#"
+                        class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                      >
+                        <i
+                          class="flaticon-call text-dark paragraph-text-lg"
+                        ></i>
+                      </a>
+                    </div>
+                    <!-- ======================= price end ======================= -->
+                  </div>
+                </div>
+              </div>
+              <!-- cart 2 end -->
+              <!-- cart 3 -->
+              <div class="col-12 col-lg-6 p-md-3 p-0 mb-4 mb-md-0">
+                <div class="row w-100 mx-0">
+                  <div class="col-5 p-1 d-flex justify-content-center">
+                    <div class="img-box w-100">
+                      <img
+                        class="product-image"
+                        src="./imgs/cardImg-3.jpg"
+                        alt="Product Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-7 p-1">
+                    <!--================= details ===================-->
+                    <div
+                      class="details py-1 px-md-4 px-1 d-flex flex-md-column justify-content-between self-sligns-center"
+                    >
+                      <div>
+                        <h1
+                          class="paragraph-text-lg font-weight-bold mb-1 text-dark text-truncate"
+                        >
+                          Metal Rhodium Bracelet
+                        </h1>
+                        <p class="paragraph-text text-muted mb-0">
+                          Quantity :
+                          <span class="paragraph-text-lg text-dark"
+                            >&nbsp;3</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <!--==================== detils end =====================-->
+
+                    <!--==================== Quantity =====================-->
+                    <div class="px-md-4 px-1 mt-2">
+                      <div
+                        class="btn-group quantity-box overflow-hidden"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <!-- less btn -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+
+                        <!-- paragraph text -->
+                        <div
+                          class="px-2 d-flex justify-content-center align-items-center border-0 bg-light-grey-2"
+                        >
+                          <p class="paragraph-text mb-0">Quantity</p>
+                        </div>
+
+                        <!-- add button -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--==================== Quantity end =====================-->
+
+                    <!-- ======================= price ======================= -->
+                    <div
+                      class="px-md-4 px-1 d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <p class="heading heading-primary text-primary mb-0">
+                        $&nbsp;11.12
+                      </p>
+
+                      <!-- delete btn -->
+                      <a
+                        href="#"
+                        class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                      >
+                        <i
+                          class="flaticon-call text-dark paragraph-text-lg"
+                        ></i>
+                      </a>
+                    </div>
+                    <!-- ======================= price end ======================= -->
+                  </div>
+                </div>
+              </div>
+              <!-- cart 3 end -->
+              <!-- cart 4 -->
+              <div class="col-12 col-lg-6 p-md-3 p-0 mb-4 mb-md-0">
+                <div class="row w-100 mx-0">
+                  <div class="col-5 p-1 d-flex justify-content-center">
+                    <div class="img-box w-100">
+                      <img
+                        class="product-image"
+                        src="./imgs/cardImg-3.jpg"
+                        alt="Product Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-7 p-1">
+                    <!--================= details ===================-->
+                    <div
+                      class="details py-1 px-md-4 px-1 d-flex flex-md-column justify-content-between self-sligns-center"
+                    >
+                      <div>
+                        <h1
+                          class="paragraph-text-lg font-weight-bold mb-1 text-dark text-truncate"
+                        >
+                          Metal Rhodium Bracelet
+                        </h1>
+                        <p class="paragraph-text text-muted mb-0">
+                          Quantity :
+                          <span class="paragraph-text-lg text-dark"
+                            >&nbsp;3</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <!--==================== detils end =====================-->
+
+                    <!--==================== Quantity =====================-->
+                    <div class="px-md-4 px-1 mt-2">
+                      <div
+                        class="btn-group quantity-box overflow-hidden"
+                        role="group"
+                        aria-label="Basic example"
+                      >
+                        <!-- less btn -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+
+                        <!-- paragraph text -->
+                        <div
+                          class="px-2 d-flex justify-content-center align-items-center border-0 bg-light-grey-2"
+                        >
+                          <p class="paragraph-text mb-0">Quantity</p>
+                        </div>
+
+                        <!-- add button -->
+                        <button
+                          type="button"
+                          class="quantity-btn paragraph-text bg-light-grey border-0"
+                        >
+                          <i class="flaticon-worldwide"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!--==================== Quantity end =====================-->
+
+                    <!-- ======================= price ======================= -->
+                    <div
+                      class="px-md-4 px-1 d-flex justify-content-between align-items-center mt-auto"
+                    >
+                      <p class="heading heading-primary text-primary mb-0">
+                        $&nbsp;11.12
+                      </p>
+
+                      <!-- delete btn -->
+                      <a
+                        href="#"
+                        class="btn-round shadow-sm d-flex justify-content-center align-items-center text-decoration-none mr-3 mr-md-0"
+                      >
+                        <i
+                          class="flaticon-call text-dark paragraph-text-lg"
+                        ></i>
+                      </a>
+                    </div>
+                    <!-- ======================= price end ======================= -->
+                  </div>
+                </div>
+              </div>
+              <!-- cart 4 end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================== Cart End ===================================== -->
+  </body>
+</html>
