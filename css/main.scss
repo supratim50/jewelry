@@ -76,7 +76,7 @@ body {
 
 .bg-primary-light {
   background-color: $color-primary-light !important;
-  color: $color-secondary;
+  color: $bodyTextBlack;
 }
 
 .bg-background {
@@ -115,7 +115,7 @@ body {
 
 .heading {
   font-weight: bold !important;
-  font-size: $bodyTextBlack;
+  color: $bodyTextBlack;
   &-primary {
     font-size: 22px !important;
 
@@ -269,6 +269,14 @@ body {
   &-primary {
     background-color: $color-primary !important;
     color: $color-secondary;
+    box-shadow: 0px 3px 10px rgba(238, 45, 79, 0.3) !important;
+  }
+  &-secondary {
+    border: 1px solid $color-primary !important;
+    background-color: $color-secondary !important;
+    color: $color-primary !important;
+    border-radius: 20px !important;
+    box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.05) !important;
   }
 }
 
@@ -491,6 +499,7 @@ body {
 
       & > .cross {
         display: none;
+        color: $color-secondary !important;
       }
     }
 
@@ -515,11 +524,6 @@ body {
 
 #product-show {
   @include after-nav-section();
-}
-
-// =========================== Product page end ============================
-
-#product-show {
   // ====== details
   .side-image {
     max-height: 320px;
@@ -584,6 +588,71 @@ body {
 #fav-product-page-list {
   margin-top: 90px;
 }
+
+// =========================== Product page end ============================
+
+// =============================== Order Page ======================================
+
+.main-order-box {
+  width: 85%;
+
+  @include responsive-max(991px) {
+    width: 100%;
+  }
+}
+
+// ============= #order-header
+#order-header {
+  @include after-nav-section();
+
+  .selector-box {
+    .selector {
+      border-radius: 20px !important;
+      border: none !important;
+      padding: 7px 31px !important;
+      @include responsive-max(991px) {
+        padding: 5px 15px !important;
+      }
+    }
+
+    .active {
+      background-color: $bodyTextBlack !important;
+      color: $white !important;
+    }
+  }
+}
+
+// ============ #order
+#orders {
+  .order {
+    // order-sub-box
+    &-sub-box {
+      .paragraph-text-lg,
+      .heading-primary {
+        @include responsive-max(491px) {
+          font-size: 14px !important;
+        }
+      }
+      .paragraph-text {
+        @include responsive-max(491px) {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    // order-details
+    &-details {
+      min-height: 130px;
+    }
+
+    // order-pricing
+    &-pricing {
+      min-height: 130px;
+    }
+  }
+}
+
+// ============================== Order Page end =================================
 
 // ============== SWIPER JS =============
 

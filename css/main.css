@@ -10784,7 +10784,7 @@ body {
 
 .bg-primary-light {
   background-color: rgba(238, 45, 79, 0.03) !important;
-  color: #fff;
+  color: #373737;
 }
 
 .bg-background {
@@ -10823,7 +10823,7 @@ body {
 
 .heading {
   font-weight: bold !important;
-  font-size: #373737;
+  color: #373737;
 }
 
 .heading-primary {
@@ -10968,6 +10968,17 @@ body {
 .btn-primary {
   background-color: #ee2d4f !important;
   color: #fff;
+  -webkit-box-shadow: 0px 3px 10px rgba(238, 45, 79, 0.3) !important;
+          box-shadow: 0px 3px 10px rgba(238, 45, 79, 0.3) !important;
+}
+
+.btn-secondary {
+  border: 1px solid #ee2d4f !important;
+  background-color: #fff !important;
+  color: #ee2d4f !important;
+  border-radius: 20px !important;
+  -webkit-box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.05) !important;
 }
 
 #fav-nav .selector-box {
@@ -11182,6 +11193,7 @@ body {
 
 #fav-product-tag .tag-box .tag > .cross {
   display: none;
+  color: #fff !important;
 }
 
 #fav-product-tag .tag-box .active {
@@ -11272,6 +11284,64 @@ body {
 
 #fav-product-page-list {
   margin-top: 90px;
+}
+
+.main-order-box {
+  width: 85%;
+}
+
+@media screen and (max-width: 991px) {
+  .main-order-box {
+    width: 100%;
+  }
+}
+
+#order-header {
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 767px) {
+  #order-header {
+    margin-top: 100px;
+  }
+}
+
+#order-header .selector-box .selector {
+  border-radius: 20px !important;
+  border: none !important;
+  padding: 7px 31px !important;
+}
+
+@media screen and (max-width: 991px) {
+  #order-header .selector-box .selector {
+    padding: 5px 15px !important;
+  }
+}
+
+#order-header .selector-box .active {
+  background-color: #373737 !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 491px) {
+  #orders .order-sub-box .paragraph-text-lg,
+  #orders .order-sub-box .heading-primary {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  #orders .order-sub-box .paragraph-text {
+    font-size: 12px !important;
+  }
+}
+
+#orders .order-details {
+  min-height: 130px;
+}
+
+#orders .order-pricing {
+  min-height: 130px;
 }
 
 .swiper-container {
