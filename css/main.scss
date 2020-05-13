@@ -3,6 +3,7 @@
 // ======================= Variables ========================
 
 $color-primary: #ee2d4f;
+$color-primary-dark: #c92140;
 $color-primary-light: rgba(238, 45, 79, 0.03);
 $color-secondary: #fff;
 
@@ -75,6 +76,7 @@ body {
   margin-top: 5rem !important;
 }
 
+// =========== bg color
 .bg-primary-light {
   background-color: $color-primary-light !important;
   color: $bodyTextBlack;
@@ -101,6 +103,7 @@ body {
   background-color: $light-grey-2 !important;
   color: $bodyTextBlack !important;
 }
+
 // ================================ Utilities end ================================
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ================================ Typography ================================
@@ -174,6 +177,13 @@ body {
   }
 }
 
+// ======= hover effect
+.hover-text-primary {
+  &:hover {
+    color: $color-primary !important;
+  }
+}
+
 // ================================ Typography End ================================
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ================================ Component ====================================
@@ -196,6 +206,11 @@ body {
   .nav {
     &-icon {
       font-size: 22px;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary !important;
+      }
 
       @include responsive-max(767px) {
         font-size: 16px;
@@ -273,6 +288,7 @@ body {
 .btn {
   border-radius: 10px !important;
   border: none !important;
+  transition: all 0.5s;
 
   // &-big {
   //   padding: 17px 88px !important;
@@ -293,6 +309,10 @@ body {
     background-color: $color-primary !important;
     color: $color-secondary;
     box-shadow: 0px 3px 10px rgba(238, 45, 79, 0.3) !important;
+
+    &:hover {
+      background-color: $color-primary-dark !important;
+    }
   }
   &-secondary {
     border: 1px solid $color-primary !important;
@@ -330,6 +350,10 @@ body {
   .active {
     background-color: $color-primary !important;
     color: $color-secondary;
+
+    &:hover {
+      background-color: $color-primary-dark !important;
+    }
   }
 }
 /////////////////////////////////////////////////////////////
@@ -342,10 +366,16 @@ body {
   .card-img-top {
     max-height: 260px;
     object-fit: cover;
+    transition: 0.8s;
     @include responsive-max(767px) {
       max-height: 187px;
     }
   }
+}
+
+.item-card:hover > .card-image-box > .card-img-top {
+  background-color: red !important;
+  transform: scale(1.1) !important;
 }
 
 // ================== #fav-top-offers

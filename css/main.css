@@ -10894,6 +10894,10 @@ body {
   color: #2aa952 !important;
 }
 
+.hover-text-primary:hover {
+  color: #ee2d4f !important;
+}
+
 #fav-nav {
   width: 100%;
   position: fixed;
@@ -10913,6 +10917,11 @@ body {
 
 #fav-nav .nav-icon {
   font-size: 22px;
+  cursor: pointer;
+}
+
+#fav-nav .nav-icon:hover {
+  color: #ee2d4f !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -10985,6 +10994,8 @@ body {
 .btn {
   border-radius: 10px !important;
   border: none !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn-big {
@@ -11006,6 +11017,10 @@ body {
   color: #fff;
   -webkit-box-shadow: 0px 3px 10px rgba(238, 45, 79, 0.3) !important;
           box-shadow: 0px 3px 10px rgba(238, 45, 79, 0.3) !important;
+}
+
+.btn-primary:hover {
+  background-color: #c92140 !important;
 }
 
 .btn-secondary {
@@ -11050,6 +11065,10 @@ body {
   color: #fff;
 }
 
+#fav-nav .active:hover {
+  background-color: #c92140 !important;
+}
+
 .card .card-image-box {
   border-radius: 20px;
 }
@@ -11058,12 +11077,20 @@ body {
   max-height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 @media screen and (max-width: 767px) {
   .card .card-img-top {
     max-height: 187px;
   }
+}
+
+.item-card:hover > .card-image-box > .card-img-top {
+  background-color: red !important;
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
 }
 
 #fav-top-offers .top-offer-1st .card .card-img-top {
