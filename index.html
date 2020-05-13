@@ -18,16 +18,21 @@
     <header id="fav-nav" class="bg-background">
       <div class="container">
         <div
-          class="nav-bar py-3 py-md-4 d-flex justify-content-between align-items-center"
+          class="nav-bar py-2 d-flex justify-content-between align-items-center"
         >
-          <div class="py-2">
-            <h1 class="logo h3 mb-0">Brand Name</h1>
-          </div>
+          <a href="#" class="text-decoration-none">
+            <div class="py-2">
+              <h1 class="logo h3 mb-0 text-dark">Brand Name</h1>
+            </div>
+          </a>
           <div
             class="p-2 d-flex justify-content-between align-items-center nav-icon-box"
           >
             <!-- <a href="#" class="text-decoration-none"> -->
-            <i class="nav-icon flaticon-worldwide mr-5 mr-md-5 text-dark"></i>
+            <i
+              class="nav-icon flaticon-worldwide mr-5 mr-md-5 text-dark"
+              id="search-icon"
+            ></i>
             <!-- </a> -->
             <!--=========== bottom nav ==============-->
             <div class="nav-bottom-box py-2 py-md-0 d-flex align-items-center">
@@ -159,12 +164,73 @@
         </div>
       </div>
     </header>
+
+    <!-- ==== Search Components ==== -->
+    <div class="search-component" id="search-component">
+      <div class="search-component-box px-3 px-md-4 py-4 py-md-5">
+        <!--===== search box ======-->
+        <div
+          class="search-box p-1 px-2 rounded-lg px-md-4 mb-4 d-flex justify-content-start align-items-center shadow-sm"
+        >
+          <div
+            class="back-btn-box paragraph-text-lg px-2 px-md-3 mr-2 mr-md-3"
+            id="back-btn"
+          >
+            <i class="flaticon-worldwide text-dark btn p-0"></i>
+          </div>
+          <div class="py-2 flex-fill">
+            <form method="get">
+              <input
+                type="text"
+                placeholder="Search Items"
+                class="search-bar w-100 py-2 px-2 py-md-3 px-md-4 paragraph-text-lg border-0"
+              />
+            </form>
+          </div>
+        </div>
+
+        <!--==== search history ====-->
+        <div
+          class="py-2 px-md-4 px-2 d-flex justify-content-start align-items-center"
+        >
+          <div class="paragraph-text-lg px-2 px-md-3 mr-2 mr-md-3">
+            <i class="flaticon-worldwide text-dark"></i>
+          </div>
+          <div class="py-2 px-2 px-md-4 flex-fill">
+            <p class="paragraph-text-lg text-dark mb-0">Hello</p>
+          </div>
+        </div>
+        <div
+          class="py-2 px-md-4 px-2 d-flex justify-content-start align-items-center"
+        >
+          <div class="paragraph-text-lg px-2 px-md-3 mr-2 mr-md-3">
+            <i class="flaticon-worldwide text-dark"></i>
+          </div>
+          <div class="py-2 px-2 px-md-4 flex-fill">
+            <p class="paragraph-text-lg text-dark mb-0">Hello</p>
+          </div>
+        </div>
+        <div
+          class="py-2 px-md-4 px-2 d-flex justify-content-start align-items-center"
+        >
+          <div class="paragraph-text-lg px-2 px-md-3 mr-2 mr-md-3">
+            <i class="flaticon-worldwide text-dark"></i>
+          </div>
+          <div class="py-2 px-2 px-md-4 flex-fill">
+            <p class="paragraph-text-lg text-dark mb-0">Hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== Search Components ==== -->
     <!--================================ nav end ====================================-->
 
     <!-- ========================== top offers ============================== -->
     <section id="fav-top-offers">
       <div class="container">
-        <h1 class="heading heading-primary mb-0 text-capitalize">Top Offers</h1>
+        <h1 class="heading heading-primary mb-0 text-capitalize">
+          Top Offers
+        </h1>
         <!-- ============= 1st row of top offers ================== -->
         <div class="row mt-3 top-offer-1st">
           <div class="col-12 p-2 p-md-3">
@@ -308,7 +374,7 @@
         <div class="row mt-4">
           <div class="col-md-3 col-6 p-2 p-md-3">
             <!-- 1st card -->
-            <a href="#" class="text-decoration-none">
+            <a href="./product-page.html" class="text-decoration-none">
               <div class="card border-0 item-card">
                 <div class="card-image-box overflow-hidden position-relative">
                   <img
@@ -340,7 +406,7 @@
 
           <div class="col-md-3 col-6 p-2 p-md-3">
             <!-- 2nd card -->
-            <a href="#" class="text-decoration-none">
+            <a href="./product-page.html" class="text-decoration-none">
               <div class="card border-0 item-card">
                 <div class="card-image-box overflow-hidden position-relative">
                   <img
@@ -372,7 +438,7 @@
 
           <div class="col-md-3 col-6 p-2 p-md-3">
             <!-- 3rd card -->
-            <a href="#" class="text-decoration-none">
+            <a href="./product-page.html" class="text-decoration-none">
               <div class="card border-0 item-card">
                 <div class="card-image-box overflow-hidden position-relative">
                   <img
@@ -404,7 +470,7 @@
 
           <div class="col-md-3 col-6 p-2 p-md-3">
             <!-- 4th card -->
-            <a href="#" class="text-decoration-none">
+            <a href="./product-page.html" class="text-decoration-none">
               <div class="card border-0 item-card">
                 <div class="card-image-box overflow-hidden position-relative">
                   <img
@@ -437,5 +503,8 @@
       </div>
     </section>
     <!-- ========================== deals of the day ============================== -->
+
+    <!-- js file -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
